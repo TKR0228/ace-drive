@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ace Drive Reader</title>
+<style>
+  body { font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.8; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; color: #222; background: #fff; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  code { background: #f2f2f2; padding: 0.1rem 0.3rem; border-radius: 3px; }
+  footer { margin-top: 3rem; font-size: 0.9rem; color: #555; }
+</style>
+</head>
+<body>
+<h1>Ace Drive Reader</h1>
+
+<p>「Ace Drive Reader」は、開発者本人が個人で使う AI 秘書「Ace」に、Google Drive のファイルを読ませるための接続です。開発者本人の Mac の上だけで動き、一般には公開・配布していません。</p>
+
+<h2>何をするか</h2>
+<p>Ace は、開発者本人の指示を受けて、Ace 用の Google アカウントから見える Google Drive のファイル（本人が共有したもの、ほかの人から共有されたものを含む）を検索し、読み取ります。読んだ内容は、要約、仕事の整理、返信や更新の下書きに使います。</p>
+<p>ファイルの作成・変更・削除・移動・共有は行いません。</p>
+
+<h2>使う権限</h2>
+<ul>
+  <li>Google Drive のファイルの読み取り（<code>drive.readonly</code>）</li>
+</ul>
+
+<h2>読んだ情報の行き先</h2>
+<p>読んだ内容は、要約や下書きを作るために AI のモデル（Anthropic の Claude API）へ送り、結果を開発者本人の Slack に届けます。詳しくは<a href="privacy.html">プライバシー ポリシー</a>をご覧ください。</p>
+
+<footer>
+  <p><a href="privacy.html">プライバシー ポリシー</a></p>
+  <p>最終更新: 2026-10-19</p>
+</footer>
+</body>
+</html>
